@@ -107,11 +107,12 @@ router.post('/challenge/otp', function(req, res, next) {
 
   a0.completeOTPChallenge(otp,mfa_token,scope)
   .then(r=>{
-    session.auth = r;
+    req.session.auth = r;
     if (!process.env.TwilioMode){
       res.redirect('/summary');
     }
-  });
+  })
+  .catch(err=>next(err));
 });
 
 
