@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><%= title %></h1>
+        <p>Choose tasks...</p>
+      </div>
+      <form method="post">
+        <div class="row">
+          <div class="col">
+            <div class="checkbox">
+              <label><input type="checkbox" checked="true" name="tasks" value="view:account">view account</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="tasks" value="change:address">change address</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="tasks" value="replace:sim">replace sim</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="next" class="btn primary"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

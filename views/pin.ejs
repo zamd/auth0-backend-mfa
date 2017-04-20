@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><%= title %></h1>
+        <p>Enter pin...</p>
+      </div>
+      <form method="post">
+        <div class="row">
+            <label for="pin" class="col-1">PIN: </label>
+            <input type="password" id="pin" name="pin" class="col-2">
+        </div>
+        <div class="row">
+          <input type="submit" value="next" class="btn primary" class="col-3">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
